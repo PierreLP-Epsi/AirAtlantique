@@ -7,19 +7,25 @@ using System.Threading.Tasks;
 
 namespace AirAtlantique
 {
-    class Session
+   public class Session
     {
         [Key]
         public int ID { get; set; }
 
-        public int NbrPlaceTotal { get; set; }
+        public string Nom { get; set; }
 
-       
+        public int NbrPlaceTotal { get; set; }
 
         public String Lieu { get; set; }
 
         public int Duree { get; set; }
 
-        public bool Valider { get; set; }
+
+        public DateTime Date { get; set; }
+
+        public virtual ICollection<Employe> Employes { get; set; }
+
+        public virtual Formation Formation { get; set; }
+
     }
 }

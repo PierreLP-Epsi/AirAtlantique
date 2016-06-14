@@ -1,13 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace AirAtlantique
 {
-    enum Metier
+    public class Metier
     {
-        pilote, stewart, chefDeCabine
+        [Key]
+        public int ID { get; set; }
+
+        public string Nom { get; set; }
+
+
     }
 }

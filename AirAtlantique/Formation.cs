@@ -7,10 +7,12 @@ using System.Threading.Tasks;
 
 namespace AirAtlantique
 {
-    class Formation
+    public class Formation
     {
         [Key]
         public int ID { get; set; }
+
+        public string Nom { get; set; }
 
         public string Description { get; set; }
 
@@ -18,8 +20,13 @@ namespace AirAtlantique
 
         public int DureeDeValidation { get; set; }
 
-        public virtual ICollection<Employe> Employes { get; set; }
+        public bool Obligatoire { get; set; }
 
-        public virtual ICollection<Catalogue> Catalogues { get; set; }
+
+        public virtual ICollection<Session> Sessions { get; set; }
+
+        public string Metier { get; set; }
+
+
     }
 }

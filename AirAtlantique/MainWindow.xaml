@@ -5,8 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AirAtlantique"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="276" Width="325">
+
     <Grid>
-        
+        <Grid.Background>
+            <ImageBrush ImageSource="/AirAtlantique;component/image/542113329651978094.jpg" Stretch="None"/>
+        </Grid.Background>
+        <Button x:Name="Formation" Content="Formations" HorizontalAlignment="Left" Margin="107,136,0,0" VerticalAlignment="Top" Width="106" Click="Formation_Click"/>
+        <Button x:Name="employe" HorizontalAlignment="Left" Margin="107,82,0,0" VerticalAlignment="Top" Width="106" Content="Employés" Click="employe_Click"/>
+        <Button x:Name="Session" Content="Session" HorizontalAlignment="Left" Margin="107,188,0,0" VerticalAlignment="Top" Width="106" Height="22" Click="Session_Click"/>
+        <Button x:Name="Metier" Content="Metier" HorizontalAlignment="Left" Margin="109,40,0,0" VerticalAlignment="Top" Width="104" Height="22" Click="Metier_Click"/>
+
     </Grid>
+
 </Window>

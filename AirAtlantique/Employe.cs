@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace AirAtlantique
 {
-    class Employe
+    public class Employe
     {
         [Key]
         public int ID { get; set; }
@@ -16,9 +16,11 @@ namespace AirAtlantique
 
         public string Prenom { get; set; }
 
-        public Metier Metier { get; set; }
 
-        public virtual ICollection<Formation> Formations { get; set; }
+        public virtual Session sessions{ get; set; }
+
+        public  string Metier { get; set; }
+
 
     }
 }
